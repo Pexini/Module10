@@ -1,4 +1,7 @@
 package TaskList;
 
-public class Task {
+public interface Task {
+    void showTask();
+    void executed();
+    boolean isFinished();
 }
