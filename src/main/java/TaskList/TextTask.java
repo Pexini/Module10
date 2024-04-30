@@ -10,16 +10,16 @@ public class TextTask implements Task{
 
     @Override
     public void showTask() {
-
+        System.out.println("Отображаем текст " + text);
     }
 
     @Override
     public void executed() {
-
+        finished = true;
     }
 
     @Override
     public boolean isFinished() {
-        return false;
+        return finished;
     }
 }
