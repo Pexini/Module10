@@ -1,8 +1,8 @@
-package TaskList;
+package Middle.TaskList;
 
-public class DocumentTask implements Task{
+public class DocumentTask extends AbstractTask{
     private String documentLink;
-    private boolean finished;
+
 
     public DocumentTask(String documentLink) {
         this.documentLink = documentLink;
@@ -13,13 +13,4 @@ public class DocumentTask implements Task{
         System.out.println("Отображаем документ. Ссылка на документ " + documentLink);
     }
 
-    @Override
-    public void executed() {
-        finished = finished;
-    }
-
-    @Override
-    public boolean isFinished() {
-        return finished;
-    }
 }

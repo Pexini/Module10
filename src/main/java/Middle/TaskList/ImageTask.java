@@ -1,8 +1,7 @@
-package TaskList;
+package Middle.TaskList;
 
-public class ImageTask implements Task {
+public class ImageTask extends AbstractTask {
     private String linkToImage;
-    private boolean finished;
 
     public ImageTask(String linkToImage) {
         this.linkToImage = linkToImage;
@@ -13,13 +12,4 @@ public class ImageTask implements Task {
         System.out.println("Отображаем картинку. Ссылка на картинку " + linkToImage);
     }
 
-    @Override
-    public void executed() {
-        finished = true;
-    }
-
-    @Override
-    public boolean isFinished() {
-        return finished;
-    }
 }

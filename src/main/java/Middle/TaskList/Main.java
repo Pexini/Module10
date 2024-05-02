@@ -1,4 +1,4 @@
-package TaskList;
+package Middle.TaskList;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,9 +6,13 @@ public class Main {
         Task textTask = new TextTask("выполнить домашнее задание");
         Task docTask = new DocumentTask("C:/MyDocyments/task.doc");
 
-        TaskList taskList = new TaskList(new Task[]{imageTask, textTask, docTask});
+    textTask.showTask();
+    imageTask.showTask();
+    docTask.showTask();
 
-        taskList.showFinishedTask();
-        taskList.showUnFinishedTask();
+    textTask.execute();
+    textTask.isFinished();
+
+
     }
 }
