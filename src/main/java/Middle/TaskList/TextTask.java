@@ -10,7 +10,7 @@ class TextTask extends AbstTask {
 
     @Override
     public void showTask() {
-        System.out.println("Отображаем текст: " + text);
+        System.out.println("Задание: " + text);
     }
 
 }
