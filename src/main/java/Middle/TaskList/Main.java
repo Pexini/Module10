@@ -10,8 +10,7 @@ public class Main {
     imageTask.showTask();
     docTask.showTask();
 
-    textTask.execute();
-    textTask.isFinished();
+
 
 
     }

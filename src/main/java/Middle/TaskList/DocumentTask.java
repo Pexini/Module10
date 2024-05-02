@@ -1,6 +1,6 @@
 package Middle.TaskList;
 
-public class DocumentTask extends AbstractTask{
+public class DocumentTask extends AbstTask {
     private String documentLink;
 
 

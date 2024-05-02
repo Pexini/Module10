@@ -1,6 +1,6 @@
 package Middle.TaskList;
 
-public class ImageTask extends AbstractTask {
+public class ImageTask extends AbstTask {
     private String linkToImage;
 
     public ImageTask(String linkToImage) {

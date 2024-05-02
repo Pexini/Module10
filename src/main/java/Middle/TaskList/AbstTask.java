@@ -1,7 +1,7 @@
 package Middle.TaskList;
 
 
- public abstract class AbstractTask implements Task {
+ public abstract class AbstTask implements Task {
 
     private boolean executed;
 

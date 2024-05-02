@@ -1,6 +1,6 @@
 package Middle.TaskList;
 
-class TextTask extends AbstractTask {
+class TextTask extends AbstTask {
     private String text;
 
 
