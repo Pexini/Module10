@@ -3,8 +3,8 @@ package Middle.RentCar.Cars;
 import Middle.RentCar.impl.Car;
 
 public class Toyota_Camry extends Car {
-    public Toyota_Camry(int year, int millage, int coefficient) {
-        super(year, millage, coefficient);
+    public Toyota_Camry() {
+        super(2018, 15_000, 5);
     }
 
     @Override
@@ -17,13 +17,4 @@ public class Toyota_Camry extends Car {
         return super.getMillage();
     }
 
-    @Override
-    public int getCoefficient() {
-        return super.getCoefficient();
-    }
-
-    @Override
-    public double calculateRealCost(int rentalTime) {
-        return super.calculateRealCost(rentalTime);
-    }
 }

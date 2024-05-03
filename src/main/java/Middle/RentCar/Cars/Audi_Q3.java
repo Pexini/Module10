@@ -3,27 +3,8 @@ package Middle.RentCar.Cars;
 import Middle.RentCar.impl.Car;
 
 public class Audi_Q3 extends Car {
-    public Audi_Q3(int year, int millage, int coefficient) {
-        super(year, millage, coefficient);
+    public Audi_Q3() {
+        super(2024, 5_000, 7);
     }
 
-    @Override
-    public int getYear() {
-        return super.getYear();
-    }
-
-    @Override
-    public int getMillage() {
-        return super.getMillage();
-    }
-
-    @Override
-    public int getCoefficient() {
-        return super.getCoefficient();
-    }
-
-    @Override
-    public double calculateRealCost(int rentalTime) {
-        return super.calculateRealCost(rentalTime);
-    }
 }
