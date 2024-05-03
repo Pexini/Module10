@@ -4,7 +4,7 @@ import Middle.RentCar.impl.Car;
 
 public class BMW_M3 extends Car {
     public BMW_M3() {
-        super(2016, 60_547, 5);
+        super(2016, 6_547, 5);
     }
 
 

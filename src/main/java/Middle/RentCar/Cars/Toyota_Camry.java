@@ -4,7 +4,7 @@ import Middle.RentCar.impl.Car;
 
 public class Toyota_Camry extends Car {
     public Toyota_Camry() {
-        super(2018, 15_000, 5);
+        super(2018, 7_000, 5);
     }
 
     @Override
