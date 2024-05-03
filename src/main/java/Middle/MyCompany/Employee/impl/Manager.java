@@ -3,8 +3,8 @@ package Middle.MyCompany.Employee.impl;
 import Middle.MyCompany.Employee.BaseEmployee;
 
 public class Manager extends BaseEmployee {
-    public Manager(double baseSalary) {
-        super(baseSalary);
+    public Manager() {
+        super(50_000);
     }
 
     @Override
