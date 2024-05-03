@@ -1,11 +1,11 @@
-package Hard.Characters.Hero;
+package Hard.WorldBattle.Characters.Villian;
 
-import Hard.AbstrCharacter;
-import Hard.Characters.Character;
-import Hard.Weapon;
+import Hard.WorldBattle.Characters.AbstrCharacter;
+import Hard.WorldBattle.Characters.Character;
+import Hard.WorldBattle.Weapons.Weapon;
 
-public class Detective extends AbstrCharacter {
-    public Detective(String name, int health, Weapon weapon) {
+public class Dark_Soul extends AbstrCharacter {
+    public Dark_Soul(String name, int health, Weapon weapon) {
         super(name, health, weapon);
     }
 

@@ -1,6 +1,6 @@
-package Hard;
+package Hard.WorldBattle.Characters;
 
-import Hard.Characters.Character;
+import Hard.WorldBattle.Weapons.Weapon;
 
 public class AbstrCharacter implements Character {
     private String name;

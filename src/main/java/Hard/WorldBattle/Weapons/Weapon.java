@@ -1,4 +1,4 @@
-package Hard;
+package Hard.WorldBattle.Weapons;
 
 public interface Weapon {
     String getName();

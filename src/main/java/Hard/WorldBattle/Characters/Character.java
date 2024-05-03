@@ -1,6 +1,6 @@
-package Hard.Characters;
+package Hard.WorldBattle.Characters;
 
-import Hard.Weapon;
+import Hard.WorldBattle.Weapons.Weapon;
 
 public interface Character {
     String getName();

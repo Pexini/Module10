@@ -1,11 +1,11 @@
-package Hard.Characters.Hero;
+package Hard.WorldBattle.Characters.Hero;
 
-import Hard.AbstrCharacter;
-import Hard.Characters.Character;
-import Hard.Weapon;
+import Hard.WorldBattle.Characters.AbstrCharacter;
+import Hard.WorldBattle.Characters.Character;
+import Hard.WorldBattle.Weapons.Weapon;
 
-public class White_Witch extends AbstrCharacter {
-    public White_Witch(String name, int health, Weapon weapon) {
+public class Librarian extends AbstrCharacter {
+    public Librarian(String name, int health, Weapon weapon) {
         super(name, health, weapon);
     }
 
