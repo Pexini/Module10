@@ -1,4 +1,4 @@
-package Middle.RentCar;
+package Middle.RentCar.impl;
 
 public abstract class Car {
     private int year;
