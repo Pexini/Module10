@@ -1,18 +1,20 @@
-package Middle.MyCompany;
+package Middle.MyCompany.Employee.impl;
 
-public class Financial_Officer extends BaseEmployee{
-    public Financial_Officer(double baseSalary) {
+import Middle.MyCompany.Employee.BaseEmployee;
+
+public class Manager extends BaseEmployee {
+    public Manager(double baseSalary) {
         super(baseSalary);
     }
 
     @Override
     public double getBaseSalary() {
-        return super.getBaseSalary();
+        return 50_000;
     }
 
     @Override
     public double getBonus() {
-        return 0;
+        return 10_000;
     }
 
     @Override

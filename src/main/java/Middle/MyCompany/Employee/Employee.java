@@ -1,4 +1,4 @@
-package Middle.MyCompany;
+package Middle.MyCompany.Employee;
 
 public interface Employee {
     double getBaseSalary();
