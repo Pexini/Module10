@@ -18,7 +18,8 @@ public abstract class BaseEmployee implements Employee {
 
     @Override
     public double getTotalSalary() {
-        return getBaseSalary() + getBonus();
+        double total = getBaseSalary() + getBonus();
+        return total;
     }
 
 }
