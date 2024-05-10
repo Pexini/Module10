@@ -5,8 +5,8 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class Librarian extends AbstrCharacter {
-    public Librarian(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public Librarian() {
+        super("Mike", 60, "Book");
     }
 
     @Override

@@ -5,8 +5,8 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class White_Witch extends AbstrCharacter {
-    public White_Witch(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public White_Witch() {
+        super("Helli", 70, "Broom");
     }
 
     @Override

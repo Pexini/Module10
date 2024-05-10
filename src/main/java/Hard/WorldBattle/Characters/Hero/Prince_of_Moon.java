@@ -5,8 +5,8 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class Prince_of_Moon extends AbstrCharacter {
-    public Prince_of_Moon(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public Prince_of_Moon() {
+        super("Patrick", 90, "Moon_light");
     }
 
     @Override

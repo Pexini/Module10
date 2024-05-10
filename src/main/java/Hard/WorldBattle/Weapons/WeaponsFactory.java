@@ -1,14 +1,8 @@
 package Hard.WorldBattle.Weapons;
 
 
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Sword;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Gun;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Book;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Broom;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Revolver;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Moon_light;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Dark_knife;
-import static Hard.WorldBattle.Weapons.TypeOfWeapons.Teeth;
+import static Hard.WorldBattle.Weapons.TypeOfWeapons.*;
+
 
 public class WeaponsFactory {
     public static Weapon getWeapon(TypeOfWeapons typeOfWeapons) {
