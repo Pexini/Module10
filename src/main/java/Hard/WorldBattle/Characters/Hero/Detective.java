@@ -5,8 +5,9 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class Detective extends AbstrCharacter {
-    public Detective(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public Detective() {
+
+        super("Greg", 80, "revolver");
     }
 
     @Override
