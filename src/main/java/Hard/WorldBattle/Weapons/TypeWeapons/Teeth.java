@@ -1,6 +1,8 @@
-package Hard.WorldBattle.Weapons;
+package Hard.WorldBattle.Weapons.TypeWeapons;
 
-public class Teeth implements Weapon{
+import Hard.WorldBattle.Weapons.Weapon;
+
+public class Teeth implements Weapon {
     @Override
     public String getName() {
         return "Teeth";

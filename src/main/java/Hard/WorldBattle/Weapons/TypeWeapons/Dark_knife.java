@@ -1,6 +1,8 @@
-package Hard.WorldBattle.Weapons;
+package Hard.WorldBattle.Weapons.TypeWeapons;
 
-public class Dark_knife implements Weapon{
+import Hard.WorldBattle.Weapons.Weapon;
+
+public class Dark_knife implements Weapon {
     @Override
     public String getName() {
         return "Dark_knife";

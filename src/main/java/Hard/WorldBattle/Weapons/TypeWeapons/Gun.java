@@ -1,6 +1,8 @@
-package Hard.WorldBattle.Weapons;
+package Hard.WorldBattle.Weapons.TypeWeapons;
 
-public class Gun implements Weapon{
+import Hard.WorldBattle.Weapons.Weapon;
+
+public class Gun implements Weapon {
     @Override
     public String getName() {
         return "Gun";

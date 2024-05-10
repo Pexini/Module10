@@ -1,6 +1,8 @@
 package Hard.WorldBattle.Weapons;
 
 
+import Hard.WorldBattle.Weapons.TypeWeapons.*;
+
 import static Hard.WorldBattle.Weapons.TypeOfWeapons.*;
 
 

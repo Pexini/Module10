@@ -1,6 +1,8 @@
-package Hard.WorldBattle.Weapons;
+package Hard.WorldBattle.Weapons.TypeWeapons;
 
-public class Moon_light implements Weapon{
+import Hard.WorldBattle.Weapons.Weapon;
+
+public class Moon_light implements Weapon {
     @Override
     public String getName() {
         return "Moon_light";
