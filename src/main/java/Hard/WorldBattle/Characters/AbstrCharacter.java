@@ -44,7 +44,7 @@ public class AbstrCharacter implements Character {
         if (Math.random() >= 0.5) {
             int damage = weapon.getDamage();
             target.damage(damage);
-            System.out.println("Попал " + target.getName() + " нанес урона " + weapon.getDamage());
+            System.out.println("Попал " + getName()  +  " нанес урона " + weapon.getDamage());
         } else {
             System.out.println(getName() + " Промах");
         }
