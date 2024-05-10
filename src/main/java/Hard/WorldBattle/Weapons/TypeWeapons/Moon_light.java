@@ -10,6 +10,6 @@ public class Moon_light implements Weapon {
 
     @Override
     public int getDamage() {
-        return 30;
+        return 25;
     }
 }

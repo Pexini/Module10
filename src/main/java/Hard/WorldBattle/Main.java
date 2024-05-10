@@ -12,6 +12,9 @@ import Hard.WorldBattle.Characters.Villain.Hunter;
 import Hard.WorldBattle.Characters.Villain.Killer;
 import Hard.WorldBattle.Characters.Villain.Vampire;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import static Hard.WorldBattle.Characters.CharactersFactory.getCharacter;
@@ -25,10 +28,11 @@ public class Main {
         Character hero3 = new Prince_of_Moon();
         Character hero4 = new White_Witch();
 
-        Character villain1 = new Dark_Soul();
-        Character villain2 = new Hunter();
-        Character villain3 = new Killer();
-        Character villain14 = new Vampire();
+        List<Character> villians = new ArrayList<>();
+        villians.add(new Dark_Soul());
+        villians.add(new Hunter());
+        villians.add(new Killer());
+        villians.add(new Vampire());
 
 
         System.out.println("Welcome in new battle between Heroes and Villains...");
@@ -38,17 +42,64 @@ public class Main {
         System.out.println(" For choise 3: " + getHeroInfo(hero3));
         System.out.println(" For choise 4: " + getHeroInfo(hero4));
 
+        int chouse = scanner.nextInt();
+        Character chouseHero;
+        switch (chouse) {
+            case 1:
+                chouseHero = hero1;
+                System.out.println("Your choice: Detective");
+                break;
+            case 2:
+                chouseHero = hero2;
+                System.out.println("Your choice: Librarian");
+                break;
+            case 3:
+                chouseHero = hero3;
+                System.out.println("Your choice: Prince_of_Moon");
+                break;
+            case 4:
+                chouseHero = hero4;
+                System.out.println("Your choice: White_Witch");
+                break;
+            default:
+                System.out.println("Invalid choice, selecting Detective by default.");
+                chouseHero = hero1;
+                System.out.println("Your choice: Detective");
+                break;
+        }
+        Random random = new Random();
+        Character computerVillain = villians.get(random.nextInt(villians.size()));
+        System.out.println("Computer choice : " + getHeroInfo(computerVillain));
+
+
+        System.out.println();
+        System.out.println("Let the battle begin! ");
+        System.out.println();
+        while (chouseHero.isAlive() && computerVillain.isAlive()) {
+            chouseHero.attack(computerVillain);
+            System.out.println("У злодеев осталось здоровье " + computerVillain.getHealth());
+            if (computerVillain.isAlive()) {
+                computerVillain.attack(chouseHero);
+                System.out.println("У героя осталось здоровья " + chouseHero.getHealth());
+            }
+        }
+        if (!chouseHero.isAlive()) {
+            System.out.println("Computers villains won!");
+        } else {
+            System.out.println("You won!");
+        }
+        scanner.close();
     }
+
 
     public static String getHeroInfo(Character character) {
         AbstrCharacter hero = (AbstrCharacter) character;
-        return String.format("%s (Character: %s, Weapon: %s, Damage: %s, Health: %s",
+        return String.format("%s (Name: %s, Weapon: %s, Damage: %s, Health: %s",
                 hero.getHeroType(),
                 character.getName(),
                 character.getWeapon().getName(),
                 character.getWeapon().getDamage(),
                 character.getHealth());
-
 
     }
 }

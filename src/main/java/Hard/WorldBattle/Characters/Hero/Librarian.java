@@ -9,7 +9,7 @@ import Hard.WorldBattle.Weapons.WeaponsFactory;
 
 public class Librarian extends AbstrCharacter {
     public Librarian() {
-        super("Mike", 60, WeaponsFactory.getWeapon(TypeOfWeapons.Book), TypeOfHero.Librarian);
+        super("Mike", 100, WeaponsFactory.getWeapon(TypeOfWeapons.Book), TypeOfHero.Librarian);
     }
 
 }

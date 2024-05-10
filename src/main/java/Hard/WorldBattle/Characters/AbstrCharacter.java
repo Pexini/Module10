@@ -42,7 +42,8 @@ public class AbstrCharacter implements Character {
     @Override
     public void attack(Character target) {
         if (Math.random() >= 0.5) {
-            target.damage(weapon.getDamage());
+            int damage = weapon.getDamage();
+            target.damage(damage);
             System.out.println("Попал " + target.getName() + " нанес урона " + weapon.getDamage());
         } else {
             System.out.println(getName() + " Промах");
@@ -52,7 +53,7 @@ public class AbstrCharacter implements Character {
     @Override
     public void damage(int damage) {
         health -= damage;
-        if (health <= 0) {
+        if (health < 0) {
             health = 0;
         }
     }

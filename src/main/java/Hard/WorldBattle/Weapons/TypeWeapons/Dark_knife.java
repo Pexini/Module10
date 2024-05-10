@@ -10,6 +10,6 @@ public class Dark_knife implements Weapon {
 
     @Override
     public int getDamage() {
-        return 30;
+        return 20;
     }
 }

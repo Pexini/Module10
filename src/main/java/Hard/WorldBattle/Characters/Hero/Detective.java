@@ -10,6 +10,6 @@ import Hard.WorldBattle.Weapons.WeaponsFactory;
 public class Detective extends AbstrCharacter {
     public Detective() {
 
-        super("Greg", 80, WeaponsFactory.getWeapon(TypeOfWeapons.Revolver), TypeOfHero.Detective);
+        super("Greg", 60, WeaponsFactory.getWeapon(TypeOfWeapons.Revolver), TypeOfHero.Detective);
     }
 }
