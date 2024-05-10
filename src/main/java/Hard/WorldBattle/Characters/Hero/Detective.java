@@ -11,29 +11,4 @@ public class Detective extends AbstrCharacter {
 
         super("Greg", 80, WeaponsFactory.getWeapon(TypeOfWeapons.Revolver));
     }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public int getHealth() {
-        return super.getHealth();
-    }
-
-    @Override
-    public Weapon getWeapon() {
-        return super.getWeapon();
-    }
-
-    @Override
-    public void attack(Character target) {
-        super.attack(target);
-    }
-
-    @Override
-    public void damage(int damage) {
-        super.damage(damage);
-    }
 }

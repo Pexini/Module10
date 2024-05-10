@@ -2,7 +2,7 @@ package Hard.WorldBattle.Characters;
 
 import Hard.WorldBattle.Characters.Hero.*;
 
-import Hard.WorldBattle.Characters.Villian.*;
+import Hard.WorldBattle.Characters.Villain.*;
 
 import static Hard.WorldBattle.Characters.TypeOfHero.*;
 import static Hard.WorldBattle.Characters.TypeOfVillain.*;

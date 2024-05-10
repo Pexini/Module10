@@ -8,4 +8,5 @@ public interface Character {
     Weapon getWeapon();
     void attack(Character target);
     void damage (int damage);
+    boolean isAlife();
 }
