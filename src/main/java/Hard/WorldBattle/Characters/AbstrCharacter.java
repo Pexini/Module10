@@ -6,12 +6,23 @@ public class AbstrCharacter implements Character {
     private String name;
     private int health;
     private Weapon weapon;
+    private TypeOfHero typeOfHero;
 
-    public AbstrCharacter(String name, int health, Weapon weapon) {
+
+    public AbstrCharacter(String name, int health, Weapon weapon, TypeOfHero typeOfHero) {
         this.name = name;
         this.health = health;
         this.weapon = weapon;
+        this.typeOfHero = typeOfHero;
+
     }
+
+
+    public TypeOfHero getHeroType() {
+        return typeOfHero;
+    }
+
+
 
     @Override
     public String getName() {
@@ -40,14 +51,16 @@ public class AbstrCharacter implements Character {
 
     @Override
     public void damage(int damage) {
-        health = -damage;
+        health -= damage;
         if (health <= 0) {
             health = 0;
         }
     }
 
     @Override
-    public boolean isAlife() {
+    public boolean isAlive() {
         return health > 0;
     }
 }
+
+
