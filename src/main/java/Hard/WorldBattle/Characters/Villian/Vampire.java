@@ -5,8 +5,8 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class Vampire extends AbstrCharacter {
-    public Vampire(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public Vampire() {
+        super("Vlad", 99, "Teeth");
     }
 
     @Override

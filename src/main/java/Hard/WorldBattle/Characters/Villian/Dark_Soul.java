@@ -5,8 +5,8 @@ import Hard.WorldBattle.Characters.Character;
 import Hard.WorldBattle.Weapons.Weapon;
 
 public class Dark_Soul extends AbstrCharacter {
-    public Dark_Soul(String name, int health, Weapon weapon) {
-        super(name, health, weapon);
+    public Dark_Soul() {
+        super("Vier", 90, "Dark_knife");
     }
 
     @Override
