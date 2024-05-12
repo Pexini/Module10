@@ -1,7 +1,7 @@
 package Middle.TaskList;
 
 
- public abstract class AbstTask implements Task {
+public abstract class AbstTask implements Task {
 
     private boolean executed;
 
@@ -14,5 +14,6 @@ package Middle.TaskList;
     public boolean isFinished() {
         return executed;
     }
-     public abstract void showTask();
- }
+
+    public abstract void showTask();
+}

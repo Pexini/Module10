@@ -3,6 +3,8 @@ package Middle.MyCompany.Employee.impl;
 import Middle.MyCompany.Employee.BaseEmployee;
 
 public class HR extends BaseEmployee {
+    private static final double HR_BONUS = 30_000;
+
     public HR() {
         super(60_000);
     }
@@ -14,7 +16,7 @@ public class HR extends BaseEmployee {
 
     @Override
     public double getBonus() {
-        return 30_000;
+        return HR_BONUS;
     }
 
     @Override

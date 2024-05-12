@@ -3,18 +3,16 @@ package Middle.MyCompany.Employee.impl;
 import Middle.MyCompany.Employee.BaseEmployee;
 
 public class Scientist extends BaseEmployee {
+    private static final double SCIENTIST_BONUS = 70_000;
+
     public Scientist() {
         super(30_000);
     }
 
-    @Override
-    public double getBaseSalary() {
-        return 30_000;
-    }
 
     @Override
     public double getBonus() {
-        return 70_000;
+        return SCIENTIST_BONUS;
     }
 
     @Override
