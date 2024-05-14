@@ -6,23 +6,16 @@ public class AbstrCharacter implements Character {
     private String name;
     private int health;
     private Weapon weapon;
-    private TypeOfHero typeOfHero;
 
 
-    public AbstrCharacter(String name, int health, Weapon weapon, TypeOfHero typeOfHero) {
+
+    public AbstrCharacter(String name, int health, Weapon weapon) {
         this.name = name;
         this.health = health;
         this.weapon = weapon;
-        this.typeOfHero = typeOfHero;
+
 
     }
-
-
-    public TypeOfHero getHeroType() {
-        return typeOfHero;
-    }
-
-
 
     @Override
     public String getName() {

@@ -2,11 +2,8 @@ package Hard.WorldBattle;
 
 import Hard.WorldBattle.Characters.AbstrCharacter;
 import Hard.WorldBattle.Characters.Character;
-import Hard.WorldBattle.Characters.CharactersFactory;
 import Hard.WorldBattle.Characters.Hero.*;
 
-import Hard.WorldBattle.Characters.TypeOfHero;
-import Hard.WorldBattle.Characters.TypeOfHero.*;
 import Hard.WorldBattle.Characters.Villain.Dark_Soul;
 import Hard.WorldBattle.Characters.Villain.Hunter;
 import Hard.WorldBattle.Characters.Villain.Killer;
@@ -17,22 +14,24 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-import static Hard.WorldBattle.Characters.CharactersFactory.getCharacter;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Character hero1 = new Detective();
-        Character hero2 = new Librarian();
-        Character hero3 = new Prince_of_Moon();
-        Character hero4 = new White_Witch();
+        Character hero1 = new Detective("Greg", 60);
+        Character hero2 = new Librarian("Ton", 80);
+        Character hero3 = new Prince_of_Moon("Ben", 90);
+        Character hero4 = new Prince_of_Moon("Ben1", 80);
+        Character hero5 = new White_Witch("Nick", 70);
+
 
         List<Character> villians = new ArrayList<>();
-        villians.add(new Dark_Soul());
-        villians.add(new Hunter());
-        villians.add(new Killer());
-        villians.add(new Vampire());
+        villians.add(new Dark_Soul("Dred", 80));
+        villians.add(new Hunter("Rint", 90));
+        villians.add(new Killer("Mute", 50));
+        villians.add(new Killer("Mute_v1", 70));
+        villians.add(new Vampire("Pot", 90));
 
 
         System.out.println("Welcome in new battle between Heroes and Villains...");
@@ -41,6 +40,7 @@ public class Main {
         System.out.println(" For choise 2: " + getHeroInfo(hero2));
         System.out.println(" For choise 3: " + getHeroInfo(hero3));
         System.out.println(" For choise 4: " + getHeroInfo(hero4));
+        System.out.println(" For choise 5: " + getHeroInfo(hero5));
 
         int chouse = scanner.nextInt();
         Character chouseHero;
@@ -59,6 +59,10 @@ public class Main {
                 break;
             case 4:
                 chouseHero = hero4;
+                System.out.println("Your choice:Prince_of_Moon_v2");
+                break;
+            case 5:
+                chouseHero = hero5;
                 System.out.println("Your choice: White_Witch");
                 break;
             default:
@@ -91,15 +95,16 @@ public class Main {
         scanner.close();
     }
 
-
-    public static String getHeroInfo(Character character) {
-        AbstrCharacter hero = (AbstrCharacter) character;
-        return String.format("%s (Name: %s, Weapon: %s, Damage: %s, Health: %s",
-                hero.getHeroType(),
+    public static String getHeroInfo(Character character){
+        return String.format("%s (Name: %s, Health: %d, Weapon: %s, Damage: %d)",
+                character.getClass().getSimpleName(),
                 character.getName(),
+                character.getHealth(),
                 character.getWeapon().getName(),
-                character.getWeapon().getDamage(),
-                character.getHealth());
-
+                character.getWeapon().getDamage());
     }
+
+
 }
+
+
