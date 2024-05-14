@@ -1,12 +1,14 @@
 package Middle.MyCompany;
 
+import Middle.MyCompany.Employee.EmplBonus;
 import Middle.MyCompany.Employee.Employee;
 import Middle.MyCompany.Employee.impl.HR;
 
 import java.text.DecimalFormat;
 
+import static Middle.MyCompany.Employee.TypeofEmployee.*;
 import static Middle.MyCompany.EmployeeFactory.getEmployee;
-import static Middle.MyCompany.TypeofEmployee.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -36,7 +38,7 @@ public class Main {
 
     private static void getEmployeeInfo(Employee employee) {
         System.out.println("Зарплата за месяц " + new DecimalFormat("#,###,###,##0.00").format(employee.getBaseSalary()));
-        System.out.println("Бонусы за месяц " + new DecimalFormat("#,###,###,##0.00").format(employee.getBonus()));
+        System.out.println("Бонусы за месяц " + new DecimalFormat("#,###,###,##0.00").format(employee.getbonus()));
         System.out.println("Итого за месяц " + new DecimalFormat("#,###,###,##0.00").format(employee.getTotalSalary()));
         System.out.println();
 

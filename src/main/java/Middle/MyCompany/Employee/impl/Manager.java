@@ -1,20 +1,23 @@
 package Middle.MyCompany.Employee.impl;
 
-import Middle.MyCompany.Employee.BaseEmployee;
+import Middle.MyCompany.Employee.*;
 
 public class Manager extends BaseEmployee {
-    private static final double MANAGER_BONUS = 10_000;
+
 
     public Manager() {
-        super(50_000);
+        super(TypeofEmployee.Manager, EmplSalary.MANAGER_SALARY, EmplBonus.MANAGER_BONUS);
     }
-
 
     @Override
-    public double getBonus() {
-        return MANAGER_BONUS;
+    public double getBaseSalary() {
+        return EmplSalary.MANAGER_SALARY.getSalary();
     }
 
+    @Override
+    public double getbonus() {
+        return EmplBonus.MANAGER_BONUS.getBonus();
+    }
     @Override
     public double getTotalSalary() {
         return super.getTotalSalary();

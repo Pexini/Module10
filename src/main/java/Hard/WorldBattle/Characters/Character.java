@@ -12,7 +12,7 @@ public interface Character {
 
     void attack(Character target);
 
-    void damage(int damage);
+    void takedamage(int damage);
 
     boolean isAlive();
 }

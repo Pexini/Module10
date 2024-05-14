@@ -1,24 +1,25 @@
 package Middle.MyCompany.Employee.impl;
 
 import Middle.MyCompany.Employee.BaseEmployee;
+import Middle.MyCompany.Employee.EmplBonus;
+import Middle.MyCompany.Employee.EmplSalary;
+import Middle.MyCompany.Employee.TypeofEmployee;
 
 public class HR extends BaseEmployee {
-    private static final double HR_BONUS = 30_000;
 
     public HR() {
-        super(60_000);
+        super(TypeofEmployee.HR, EmplSalary.HR_SALARY, EmplBonus.HR_BONUS);
     }
 
     @Override
     public double getBaseSalary() {
-        return 60_000;
+        return EmplSalary.HR_SALARY.getSalary();
     }
 
     @Override
-    public double getBonus() {
-        return HR_BONUS;
+    public double getbonus() {
+        return EmplBonus.HR_BONUS.getBonus();
     }
-
     @Override
     public double getTotalSalary() {
         return super.getTotalSalary();
