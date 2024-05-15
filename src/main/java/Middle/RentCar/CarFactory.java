@@ -14,8 +14,8 @@ public class CarFactory {
                 return new Volkswagen_Golf();
             case Honda_Civic:
                 return new Honda_Civic();
-//            case BMW_M3:
-//                return new BMW_M3();
+            case BMW_M3:
+                return new BMW_M3();
             default:
                 throw new IllegalArgumentException("Неверный тип автомобиля");
         }
